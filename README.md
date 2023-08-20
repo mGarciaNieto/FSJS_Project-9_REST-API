@@ -31,7 +31,14 @@ To complete this project, I've used my knowledge of Node.js, Express, REST APIS,
    - updatedAt
   - Update the /api/courses/:id PUT and /api/courses/:id DELETE routes to ensure that the currently authenticated user is the owner of the requested course. 
     - If the currently authenticated user is not the owner of the requested course a 403 HTTP status code should be returned. 
+##
+Verify the deployment by navigating to your server address in
+your preferred browser.
+
+```sh
+127.0.0.1:8000
+```
 
 ##
 
-> Grade: ready for marking
+> **Grade**: ready for marking
