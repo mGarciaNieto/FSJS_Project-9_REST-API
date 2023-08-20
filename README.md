@@ -43,7 +43,7 @@ To complete this project, I've used my knowledge of Node.js, Express, REST APIS,
   `npm start`
 
 **Verify the deployment by navigating to your server address in
-your preferred browser.**
+your preferred browser**
 
 http://localhost:8000
 
