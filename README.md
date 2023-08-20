@@ -33,8 +33,11 @@ To complete this project, I've used my knowledge of Node.js, Express, REST APIS,
     - If the currently authenticated user is not the owner of the requested course a `403` HTTP status code should be returned. 
 
 ##
-Verify the deployment by navigating to your server address in
-your preferred browser.
+**Verify the deployment by navigating to your server address in
+your preferred browser.**
+
+127.0.0.1:8000
+https://localhost:8000
 
 ```sh
 127.0.0.1:8000
