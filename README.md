@@ -25,12 +25,12 @@ To complete this project, I've used my knowledge of Node.js, Express, REST APIS,
   - Update the `/api/users` `POST` route to check for and handle `SequelizeUniqueConstraintError` errors.
     - If a `SequelizeUniqueConstraintError` is thrown a `400` HTTP status code and an error message should be returned.
 
-  - Update the Course Routes
-    - Update the `/api/courses` and `/api/courses/:id` `GET` routes so that the following properties are filtered out of the response: 
-      - `createdAt`
-      - `updatedAt`
-    - Update the `/api/courses/:id` `PUT` and `/api/courses/:id` `DELETE` routes to ensure that the currently authenticated user is the owner of the requested course. 
-      - If the currently authenticated user is not the owner of the requested course a `403` HTTP status code should be returned. 
+- **Update the Course Routes**
+  - Update the `/api/courses` and `/api/courses/:id` `GET` routes so that the following properties are filtered out of the response: 
+    - `createdAt`
+    - `updatedAt`
+  - Update the `/api/courses/:id` `PUT` and `/api/courses/:id` `DELETE` routes to ensure that the currently authenticated user is the owner of the requested course. 
+    - If the currently authenticated user is not the owner of the requested course a `403` HTTP status code should be returned. 
 ##
 Verify the deployment by navigating to your server address in
 your preferred browser.
