@@ -14,7 +14,7 @@ To complete this project, I've used my knowledge of Node.js, Express, REST APIS,
 - **Ensure User Email Address is Valid and Unique**
   - Add validation to the `emailAddress` attribute in the `User` model to ensure that the provided email address is properly formatted.
   - Add the `unique` constraint to the `User` model to ensure that the provided email address isn't already associated with an existing user.
-
+###
 - **Update the User Routes**
   - Update the `/api/users` `GET` route so that the following properties are filtered out of the response: 
     - `password`
@@ -24,7 +24,7 @@ To complete this project, I've used my knowledge of Node.js, Express, REST APIS,
 
   - Update the `/api/users` `POST` route to check for and handle `SequelizeUniqueConstraintError` errors.
     - If a `SequelizeUniqueConstraintError` is thrown a `400` HTTP status code and an error message should be returned.
-
+##
 - **Update the Course Routes**
   - Update the `/api/courses` and `/api/courses/:id` `GET` routes so that the following properties are filtered out of the response: 
     - `createdAt`
