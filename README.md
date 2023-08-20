@@ -33,10 +33,10 @@ To complete this project, I've used my knowledge of Node.js, Express, REST APIS,
     - If the currently authenticated user is not the owner of the requested course a `403` HTTP status code should be returned. 
 
 ## To run the project
-**First**, install the project's dependencies:
+**First**, install the project dependencies:
   `npm install`
 
-**Next**, populate the database:
+**Next**, create the database and seed it with initial data:
   `npm run seed`
 
 **Finally**, launch the application:
@@ -45,12 +45,12 @@ To complete this project, I've used my knowledge of Node.js, Express, REST APIS,
 **Verify the deployment by navigating to your server address in
 your preferred browser**
 
-http://localhost:8000
+http://localhost:5000
 
 or
 
 ```sh
-127.0.0.1:8000
+127.0.0.1:5000
 ```
 
 ##
