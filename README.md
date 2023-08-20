@@ -32,12 +32,22 @@ To complete this project, I've used my knowledge of Node.js, Express, REST APIS,
   - Update the `/api/courses/:id` `PUT` and `/api/courses/:id` `DELETE` routes to ensure that the currently authenticated user is the owner of the requested course. 
     - If the currently authenticated user is not the owner of the requested course a `403` HTTP status code should be returned. 
 
-##
+## To run the project
+**First**, install the project's dependencies:
+  `npm install`
+
+**Next**, populate the database:
+  `npm run seed`
+
+**Finally**, launch the application:
+  `npm start`
+
 **Verify the deployment by navigating to your server address in
 your preferred browser.**
 
-127.0.0.1:8000
-https://localhost:8000
+http://localhost:8000
+
+or
 
 ```sh
 127.0.0.1:8000
