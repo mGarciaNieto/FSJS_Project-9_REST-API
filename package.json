@@ -7,8 +7,8 @@
     "start": "nodemon ./app.js",
     "seed": "cross-env DB_ENABLE_LOGGING=true node './seed'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["node", "express", "rest", "api", "sequelize", "sqlite"],
+  "author": "Manuel Garcia-Nieto",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.18.3"
