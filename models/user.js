@@ -75,6 +75,7 @@ module.exports = (sequelize, DataTypes) => {
 		{ sequelize }
 	)
 
+	// Model Association
 	User.associate = (models) => {
 		User.hasMany(models.Course, {
 			as: 'user',
