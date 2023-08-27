@@ -13,11 +13,11 @@ router.get(
 	'/courses',
 	asyncHandler(async (req, res) => {
 		const courses = await Course.findAll({
-      attributes: { exclude: ['createdAt', 'updatedAt'] },
+			attributes: { exclude: ['createdAt', 'updatedAt'] },
 			include: [
 				{
 					model: User,
-          where: { id: Sequelize.col('Course.userId') }, 
+					as: 'user',
 					attributes: ['firstName', 'lastName', 'emailAddress']
 				}
 			]
@@ -31,11 +31,11 @@ router.get(
 	'/courses/:id',
 	asyncHandler(async (req, res) => {
 		const course = await Course.findByPk(req.params.id, {
-      attributes: { exclude: ['createdAt', 'updatedAt'] },
+			attributes: { exclude: ['createdAt', 'updatedAt'] },
 			include: [
 				{
 					model: User,
-					where: { id: Sequelize.col('Course.userId') }, 
+					as: 'user',
 					attributes: ['firstName', 'lastName', 'emailAddress']
 				}
 			]
@@ -43,7 +43,7 @@ router.get(
 		if (course) {
 			res.status(200).json(course)
 		} else {
-			res.status(404).json({ message:  `Course with id: ${req.params.id} was not found.`  })
+			res.status(404).json({ message: `Course with id: ${req.params.id} was not found.` })
 		}
 	})
 )
